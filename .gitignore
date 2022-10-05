@@ -1,0 +1,16 @@
+home
+dart-sdk
+cmdline-tools
+sdk
+openjdk
+flutter
+vscode
+git
+
+Flutter Code.lnk
+
+
+playground/*
+!playground/.gitkeep
+!playground/hello-dart
+!playground/hello_flutter
