@@ -1,4 +1,5 @@
 * Install packages using `sdkmanager`
+	* `%cd%\sdk` is %my-flutter-set_root%\sdk , is not opened dir in vscode
 ```cmd
 sdkmanager.bat --sdk_root=%cd%\sdk --licenses
 sdkmanager.bat --sdk_root=%cd%\sdk --list
@@ -10,7 +11,8 @@ sdkmanager.bat --sdk_root=%cd%\sdk --install "emulator"
 sdkmanager.bat --sdk_root=%cd%\sdk --install "system-images;android-33;google_apis_playstore;x86_64"
 ```
 * Trouble shooting
-	* If meet error change to jdk1.8 for `avdmanager`
+	* If meet error, change jdk11 to jdk1.8 for `avdmanager` & virtual device using,
+	* then roll back to jdk11 for gradle using
 ```cmd
 sdkmanager.bat --sdk_root=%cd%\sdk --install "system-images;android-33;google_apis_playstore;x86_64"
 ```
