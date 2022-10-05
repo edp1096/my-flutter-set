@@ -14,9 +14,10 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 Unblock-File *.ps1
 ```
 
-
 * delete_all.cmd - Delete all installed
 * console.cmd - Command prompt with the python path
+
+* install_update_all.cmd - run all of below `cmd` files
 
 * dart_install_update.cmd - Install dart-sdk
 * flutter_install_update.cmd - Install flutter
