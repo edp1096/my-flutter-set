@@ -1,5 +1,6 @@
 Scripts for `Flutter` toy creation on Windows
 
+<img src="image.png">
 
 ## Scripts
 
