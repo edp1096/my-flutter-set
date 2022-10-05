@@ -19,6 +19,9 @@ Unblock-File *.ps1
 * console.cmd - Command prompt with the python path
 
 * dart_install_update.cmd - Install dart-sdk
+* flutter_install_update.cmd - Install flutter
+* openjdk_install_update.cmd - Install jdk
+* sdkmanager_install_update.cmd - Install sdkmanger cmdline-tools
 
 * Vscode, Git
     * vscode_git_install_update.cmd - Install vscode, git. Update vscode
@@ -28,5 +31,5 @@ Unblock-File *.ps1
 
 ## Others
 
-* MEMO.md - Memo for `sdkmanager`, `avd`, `emulator` using
+* MEMO.md - Memo for `sdkmanager`, `avd`, `emulator` using or trouble shooting
 * playground/ - Workspace for dart practice
