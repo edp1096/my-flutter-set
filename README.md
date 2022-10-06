@@ -7,7 +7,7 @@ Scripts for `Flutter` toy creation on Windows
 
 * Run `install_update_all.cmd`
 * Android SDK
-    * See `MEMO.md`
+    * See [`MEMO.md`](MEMO.md)
 
 
 ## Scripts
