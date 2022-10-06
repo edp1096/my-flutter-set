@@ -2,6 +2,7 @@ Scripts for `Flutter` toy creation on Windows
 
 <img src="image.png">
 
+
 ## Scripts
 
 * `ExecutionPolicy` should be set to `RemoteSigned` and unblock `ps1` files
@@ -30,6 +31,12 @@ Unblock-File *.ps1
         * GIT_DOWNLOAD_URL - Environment variable for vscode_git_install_update.cmd
         * vscode_checksum_fix.ps1 - For [webfont](https://github.com/Joungkyun/font-d2coding-ligature). <b>Do not run directly<b>
     * vscode_run.cmd - Run vscode
+
+
+## Install android sdk
+
+* See `MEMO.md`
+
 
 ## Others
 
