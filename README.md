@@ -26,7 +26,7 @@ Unblock-File *.ps1
 * delete_all.cmd - Delete all installed
 * console.cmd - Command prompt with the python path
 
-* install_update_all.cmd - run all of below `cmd` files
+* `install_update_all.cmd` - run all of below `cmd` files
 
 * dart_install_update.cmd - Install dart-sdk
 * flutter_install_update.cmd - Install flutter
@@ -42,5 +42,5 @@ Unblock-File *.ps1
 
 ## Others
 
-* MEMO.md - Memo for `sdkmanager`, `avd`, `emulator` using or trouble shooting
+* [MEMO.md](/MEMO.md) - Memo for `sdkmanager`, `avd`, `emulator` using or trouble shooting
 * playground/ - Workspace for dart practice
