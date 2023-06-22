@@ -4,6 +4,8 @@ $json = Invoke-WebRequest -UseBasicParsing -Uri $uri | ConvertFrom-Json
 
 $versions = $json.name.Split()
 $version = $versions[$versions.length - 1]
+$version = $version -replace "\.windows.*",  ""
+$version = $version -replace "v",  ""
 
 $asset = $json.assets | Where-Object { $_.name -eq "MinGit-$version-busybox-64-bit.zip" }
 
