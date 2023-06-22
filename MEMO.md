@@ -1,6 +1,7 @@
 ## Install packages using `sdkmanager`
 
-* `%cd%\sdk` is %my-flutter-set_root%\sdk , is not opened dir in vscode
+* `%cd%\sdk` means `%my-flutter-set_root%\sdk` which is not opened dir in vscode.
+* If run below commands on vscode, restart vscode after below commands are finished.
 ```cmd
 sdkmanager.bat --sdk_root=%cd%\sdk --licenses
 sdkmanager.bat --sdk_root=%cd%\sdk --list
