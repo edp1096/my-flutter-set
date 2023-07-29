@@ -12,7 +12,7 @@ rmdir git /q/s 2>nul
 del vscode.zip /q/s 2>nul
 del git.zip /q/s 2>nul
 del flutter.zip /q/s 2>nul
-del openjdk.zip /q /s 1>nul
+del openjdk.zip /q/s 2>nul
 
 del "Flutter Code.lnk" 2>nul
 del "%UserProfile%\desktop\Flutter Code.lnk" 2>nul

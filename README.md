@@ -5,12 +5,12 @@ Scripts for `Flutter` toy creation on Windows
 
 ## Setup
 
-* Run `install_update_all.cmd`
+* Run `install_update_all.ps1`
 * Android SDK
     * See [`MEMO.md`](MEMO.md)
 
 
-## Scripts
+## PowerShell Scripts
 
 * `ExecutionPolicy` should be set to `RemoteSigned` and unblock `ps1` files
 ```powershell
@@ -26,12 +26,12 @@ Unblock-File *.ps1
 * delete_all.cmd - Delete all installed
 * console.cmd - Command prompt with the python path
 
-* `install_update_all.cmd` - run all of below `cmd` files
+* `install_update_all.ps1` - run all of below `ps1` files
 
-* dart_install_update.cmd - Install dart-sdk
-* flutter_install_update.cmd - Install flutter
-* openjdk_install_update.cmd - Install jdk
-* sdkmanager_install_update.cmd - Install sdkmanger cmdline-tools
+* dart_install_update.ps1 - Install dart-sdk
+* flutter_install_update.ps1 - Install flutter
+* openjdk_install_update.ps1 - Install jdk
+* sdkmanager_install_update.ps1 - Install sdkmanger cmdline-tools
 
 * Vscode, Git
     * vscode_git_install_update.cmd - Install vscode, git. Update vscode
