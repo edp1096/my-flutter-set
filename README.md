@@ -24,7 +24,7 @@ Unblock-File *.ps1
 ```
 
 * delete_all.cmd - Delete all installed
-* console.cmd - Command prompt with the python path
+* console.cmd - Command prompt with the paths
 
 * `install_update_all.ps1` - run all of below `ps1` files
 
