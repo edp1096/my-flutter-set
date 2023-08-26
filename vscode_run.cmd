@@ -16,6 +16,8 @@ set PATH=%cd%\my_cmds;%cd%\bin;C:\Windows;C:\Windows\System;C:\Windows\System32
 set PATH=%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0;%PATH%
 set PATH=%cd%\git;%cd%\git\cmd;%cd%\git\mingw64\bin;%cd%\git\usr\bin;%PATH%
 
+git config --system http.sslcainfo "%cd%/git/mingw64/etc/ssl/certs/ca-bundle.crt"
+
 if exist flutter (
     set PATH=%cd%\flutter\bin;%PATH%
 )
