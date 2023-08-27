@@ -12,13 +12,10 @@ Scripts for `Flutter` toy creation on Windows
 
 * `ExecutionPolicy` should be set to `RemoteSigned` and unblock `ps1` files
 ```powershell
-# Check
-ExecutionPolicy
-# Set as RemoteSigned
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+ExecutionPolicy                                     # Check
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned # Set as RemoteSigned
 
-# Unblock ps1 files
-Unblock-File *.ps1
+Unblock-File *.ps1                                  # Unblock ps1 files
 ```
 
 * delete_all.cmd - Delete all installed
