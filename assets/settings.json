@@ -4,7 +4,7 @@
     "workbench.settings.editor": "json",
     "workbench.sideBar.location": "right",
     "workbench.editor.autoLockGroups": {
-        "terminalEditor": false,
+        "terminalEditor": false
     },
     "telemetry.telemetryLevel": "off",
     "editor.fontFamily": "D2Coding ligature, Cascadia Code, Consolas, 'Courier New', monospace",
@@ -44,17 +44,63 @@
                     "keyword.operator.new",
                     "variable.language",
                     "entity.other.attribute-name",
-                    "storage",
+                    "storage"
                 ],
                 "settings": {
                     "fontStyle": "italic"
                 }
-            },
+            }
         ]
     },
     "security.workspace.trust.enabled": false,
     "scm.alwaysShowRepositories": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
+    "terminal.integrated.defaultLocation": "editor",
+    "terminal.integrated.defaultProfile.windows": "PowerShell -NoProfile",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell -NoProfile": {
+            "source": "PowerShell",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-NoLogo",
+                "-NoProfile",
+                "-NoExit",
+                "-Command",
+                "set-alias ll dir; remove-item alias:curl; remove-item alias:wget; remove-item alias:cp; remove-item alias:mv; remove-item alias:rm; remove-item alias:rmdir; function prompt { $host.ui.rawui.WindowTitle = \"PS $pwd\";  $p = $(($pwd -split '\\\\')[-1] -join '\\') + '$ '; if (-not (Test-Path env:GOENVADDED)) { Remove-Variable -name GOPATH; $env:GOBIN = \"$pwd\\bin\"; $env:GOENVADDED = \"exist\"; } return $p }"
+            ]
+        }
+    },
+    "go.useLanguageServer": true,
+    "go.toolsGopath": "${env:GOPATH}",
+    "go.toolsEnvVars": {
+        // "GOARCH": "amd64",
+        // "GOOS": "windows",
+        "GOBIN": "${workspaceFolder}/bin"
+    },
+    "go.buildTags": "goexperiment.arenas",
+    "[go]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+            "source.fixAll": true
+        }
+    },
+    "[go.work]": {
+        "editor.defaultFormatter": "golang.go",
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+            "source.fixAll": true
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true // add parameter placeholders when completing a function
+    },
     "workbench.iconTheme": "vscode-icons",
     "vsicons.dontShowNewVersionMessage": true,
     "git.enableSmartCommit": true,
@@ -73,6 +119,5 @@
         "editor.wordBasedSuggestions": false
     },
     "editor.inlineSuggest.enabled": true,
-    "git.openRepositoryInParentFolders": "never",
-    "tabnine.experimentalAutoImports": true,
+    "git.openRepositoryInParentFolders": "never"
 }

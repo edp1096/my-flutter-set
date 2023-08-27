@@ -31,6 +31,10 @@ if exist openjdk (
     set JAVA_HOME=%cd%\openjdk
     set PATH=%cd%\openjdk\bin;%PATH%
 )
+if exist go (
+    set GOROOT=%cd%\go
+    set PATH=%cd%\go;%cd%\go\bin;%cd%\home\user-profile\go\bin;%PATH%
+)
 
 set ANDROID_SDK_ROOT=%cd%\sdk
 set ANDROID_SDK_HOME=%cd%\sdk
