@@ -22,7 +22,6 @@ Unblock-File *.ps1                                  # Unblock ps1 files
     * install_update_vscode.ps1 - Install or update vscode
         * ~~vscode_checksum_fix.ps1 - For [webfont](https://github.com/Joungkyun/font-d2coding-ligature). <b>Do not run directly<b>~~ Because of wsl extension launching failure, not use.
     * install_git.ps1 - Install git
-    * install_dart.ps1 - Install dart-sdk
     * install_flutter.ps1 - Install flutter
     * install_openjdk.ps1 - Install jdk
     * install_sdkmanager.ps1 - Install sdkmanger cmdline-tools
