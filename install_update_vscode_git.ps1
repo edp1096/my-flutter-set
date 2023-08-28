@@ -55,6 +55,7 @@ cd vscode
 $env:NODE_NO_WARNINGS = 1
 bin\code.cmd --extensions-dir .\data\extension --user-data-dir .\data\user-data --install-extension vscode-icons-team.vscode-icons
 bin\code.cmd --extensions-dir .\data\extension --user-data-dir .\data\user-data --install-extension dart-code.flutter
+bin\code.cmd --extensions-dir .\data\extension --user-data-dir .\data\user-data --install-extension golang.Go
 $env:NODE_NO_WARNINGS = 0
 cd ..
 
