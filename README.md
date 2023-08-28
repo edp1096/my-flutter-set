@@ -50,9 +50,6 @@ sdkmanager.bat --sdk_root=%cd%\sdk --install "system-images;android-33;google_ap
 
 ## Trouble shooting
 
-* Emulator launch error when first vscode running
-    * Run `flutter doctor --android-licenses` in any flutter project folder
-
 * AMD cpu - Error `CPU acceleration status: GVM is not installed on this machine`
 	* Install hypervisor driver from https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/releases
 
