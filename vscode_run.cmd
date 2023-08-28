@@ -14,12 +14,14 @@ set GIT_CEILING_DIRECTORIES=%cd%\playground
 
 set PIP_NO_CACHE_DIR=off
 
-set PATH=%cd%\my_cmds;%cd%\bin;C:\Windows;C:\Windows\System;C:\Windows\System32
-set PATH=%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0;%PATH%
-set PATH=%cd%\git;%cd%\git\cmd;%cd%\git\mingw64\bin;%cd%\git\usr\bin;%PATH%
+set PATH=C:\Windows;C:\Windows\System;C:\Windows\System32
+set PATH=%PATH%;%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH\;C:\Windows\System32\wbem
+set PATH=%cd%\my_cmds;%cd%\bin;%PATH%
 
-git config --system http.sslcainfo "%cd%/git/mingw64/etc/ssl/certs/ca-bundle.crt"
-
+if exist git (
+    set PATH=%cd%\git;%cd%\git\cmd;%cd%\git\mingw64\bin;%cd%\git\usr\bin;%PATH%
+    git config --system http.sslcainfo "%cd%/git/mingw64/etc/ssl/certs/ca-bundle.crt"
+)
 if exist flutter (
     set PATH=%cd%\flutter\bin;%PATH%
 )
@@ -42,6 +44,12 @@ if exist nodejs (
     set NODEJS_ROOT=%cd%\nodejs
     set NODEJS_CACHE=%cd%\nodejs\npm-cache
     set VSCODE_RUN_COMMAND=npm config set cache %cd%\nodejs\npm-cache --global;%VSCODE_RUN_COMMAND%
+)
+if exist gnuwin (
+    set PATH=%cd%\gnuwin;%PATH%
+)
+if exist mingw (
+    set PATH=%cd%\mingw;%cd%\mingw\bin;%cd%\mingw\x86_64-w64-mingw32\bin;%PATH%
 )
 
 set ANDROID_SDK_ROOT=%cd%\sdk
