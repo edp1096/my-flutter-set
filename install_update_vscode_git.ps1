@@ -59,5 +59,5 @@ $env:NODE_NO_WARNINGS = 0
 cd ..
 
 .\vscode_checksum_fix.ps1
-.\shortcut_create.ps1
+.\create_shortcut.ps1
 copy-item "Flutter Code.lnk" $env:UserProfile\desktop

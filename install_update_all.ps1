@@ -1,5 +1,5 @@
-write-output "vscode, git" ; .\vscode_git_install_update.ps1
-write-output "flutter"     ; .\flutter_install_update.ps1
-write-output "openjdk"     ; .\openjdk_install_update.ps1
-write-output "sdkmanager"  ; .\sdkmanager_install_update.ps1
-write-output "golang"      ; .\go_install_update.ps1
+write-output "vscode, git" ; .\install_update_vscode_git.ps1
+write-output "flutter"     ; .\install_update_flutter.ps1
+write-output "openjdk"     ; .\install_update_openjdk.ps1
+write-output "sdkmanager"  ; .\install_update_sdkmanager.ps1
+write-output "golang"      ; .\install_update_go.ps1
