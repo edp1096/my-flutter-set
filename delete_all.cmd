@@ -1,6 +1,7 @@
 @echo off
 
-taskkill /im adb.exe
+taskkill /im adb.exe /F
+taskkill /im java.exe /F
 
 rmdir home /q/s 2>nul
 

@@ -52,6 +52,3 @@ sdkmanager.bat --sdk_root=%cd%\sdk --install "system-images;android-33;google_ap
 
 * AMD cpu - Error `CPU acceleration status: GVM is not installed on this machine`
 	* Install hypervisor driver from https://github.com/google/android-emulator-hypervisor-driver-for-amd-processors/releases
-
-* `delete_all.cmd` not work - `flutter`, `sdk` folder are not deleted
-	* Kill `adb.exe`, `java.exe` then delete again
