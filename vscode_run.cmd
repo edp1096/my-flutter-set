@@ -4,6 +4,8 @@ if not exist vscode (
     echo Folder 'vscode' not found & echo Please install first & ping -n 3 127.0.0.1 >nul & exit
 )
 
+set VSCODE_RUN_COMMAND=vscode\bin\code.cmd --reuse-window --extensions-dir vscode/data/extension --user-data-dir vscode/data/user-data
+
 set HOME=%cd%\home
 set USERPROFILE=%cd%\home\user-profile
 set APPDATA=%cd%\home\app-data
@@ -35,9 +37,15 @@ if exist go (
     set GOROOT=%cd%\go
     set PATH=%cd%\go;%cd%\go\bin;%cd%\home\user-profile\go\bin;%PATH%
 )
+if exist nodejs (
+    set PATH=%cd%\nodejs;%PATH%
+    set NODEJS_ROOT=%cd%\nodejs
+    set NODEJS_CACHE=%cd%\nodejs\npm-cache
+    set VSCODE_RUN_COMMAND=npm config set cache %cd%\nodejs\npm-cache --global;%VSCODE_RUN_COMMAND%
+)
 
 set ANDROID_SDK_ROOT=%cd%\sdk
 set ANDROID_SDK_HOME=%cd%\sdk
 set ANDROID_HOME=%cd%\sdk
 
-%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -WindowStyle hidden "vscode\bin\code.cmd --reuse-window --extensions-dir vscode/data/extension --user-data-dir vscode/data/user-data"
+%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -WindowStyle hidden "%VSCODE_RUN_COMMAND%"
