@@ -2,5 +2,13 @@
     {
         "key": "alt+oem_3",
         "command": "workbench.action.createTerminalEditor"
+    },
+    {
+        "key": "shift+f1",
+        "command": "go.languageserver.restart"
+    },
+    {
+        "key": "alt+f2",
+        "command": "go.install.package"
     }
 ]

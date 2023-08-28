@@ -1,5 +1,7 @@
 @echo off
 
+taskkill /im adb.exe
+
 rmdir home /q/s 2>nul
 
 rmdir openjdk /q/s 2>nul
