@@ -5,7 +5,7 @@ Scripts for `Flutter` toy creation on Windows
 
 ## Setup
 
-* Run `install_update_all.ps1`
+* Run `install_update_all.ps1` or Right mouse click on `install_update_all.ps1` > click `Run with powershell` 
 
 
 ## PowerShell Scripts

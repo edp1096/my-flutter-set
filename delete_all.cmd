@@ -2,6 +2,7 @@
 
 taskkill /im adb.exe /F 2>nul
 taskkill /im java.exe /F 2>nul
+taskkill /im node.exe /F 2>nul
 
 rmdir home /q/s 2>nul
 

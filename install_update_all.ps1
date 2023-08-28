@@ -1,6 +1,7 @@
-write-output "* vscode, git" ; .\install_update_vscode_git.ps1
-write-output "* flutter"     ; .\install_update_flutter.ps1
-write-output "* openjdk"     ; .\install_update_openjdk.ps1
-write-output "* sdkmanager"  ; .\install_update_sdkmanager.ps1
-write-output "* golang"      ; .\install_update_go.ps1
-write-output "* nodejs"      ; .\install_update_nodejs.ps1
+write-output "* vscode" ; .\install_update_vscode.ps1
+write-output "* git" ; .\install_git.ps1
+write-output "* flutter"     ; .\install_flutter.ps1
+write-output "* openjdk"     ; .\install_openjdk.ps1
+write-output "* sdkmanager"  ; .\install_sdkmanager.ps1
+write-output "* golang"      ; .\install_go.ps1
+write-output "* nodejs"      ; .\install_nodejs.ps1
