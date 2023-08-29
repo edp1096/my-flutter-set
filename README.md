@@ -5,7 +5,7 @@ Scripts for `Flutter` toy creation on Windows
 
 ## Setup
 
-* Run `install_all.ps1` or Right mouse click on `install_all.ps1` > click `Run with powershell` 
+* Run `install_all.ps1`
 
 
 ## Scripts
@@ -18,7 +18,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned # Set as RemoteSigned
 Unblock-File *.ps1                                  # Unblock ps1 files
 ```
 
-* `install_update_all.ps1` - run all of below `ps1` files and create shortcut to Desktop
+* `install_all.ps1` - run all of below `ps1` files and create shortcut to Desktop
     * install_update_vscode.ps1 - Install or update vscode
         * ~~vscode_checksum_fix.ps1 - For [webfont](https://github.com/Joungkyun/font-d2coding-ligature). <b>Do not run directly<b>~~ Because of wsl extension launching failure, not use.
     * install_git.ps1 - Install git
