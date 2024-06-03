@@ -45,6 +45,9 @@ if exist nodejs (
     set NODEJS_CACHE=%cd%\nodejs\npm-cache
     set VSCODE_RUN_COMMAND=npm config set cache %cd%\nodejs\npm-cache --global;%VSCODE_RUN_COMMAND%
 )
+if exist gnuwin (
+    set PATH=%cd%\gnuwin\bin;%PATH%
+)
 
 set ANDROID_SDK_ROOT=%cd%\sdk
 set ANDROID_SDK_HOME=%cd%\sdk
