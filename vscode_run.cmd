@@ -35,6 +35,9 @@ if exist openjdk (
     set JAVA_HOME=%cd%\openjdk
     set PATH=%cd%\openjdk\bin;%PATH%
 )
+if exist mingw (
+    set PATH=%cd%\mingw\mingw64\bin;%cd%\mingw\mingw64\x86_64-w64-mingw32\bin;%PATH%
+)
 if exist go (
     set GOROOT=%cd%\go
     set PATH=%cd%\go;%cd%\go\bin;%cd%\home\user-profile\go\bin;%PATH%
@@ -53,4 +56,8 @@ set ANDROID_SDK_ROOT=%cd%\sdk
 set ANDROID_SDK_HOME=%cd%\sdk
 set ANDROID_HOME=%cd%\sdk
 
-%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -WindowStyle hidden "%VSCODE_RUN_COMMAND%"
+@REM %SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe -WindowStyle hidden "%VSCODE_RUN_COMMAND%"
+echo Set WshShell = CreateObject("WScript.Shell") > temp.vbs
+echo WshShell.Run """%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0\powershell.exe"" -NoProfile -Command ""%VSCODE_RUN_COMMAND%""", 0, False >> temp.vbs
+cscript //nologo temp.vbs
+del temp.vbs

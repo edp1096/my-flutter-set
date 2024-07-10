@@ -12,6 +12,7 @@ rmdir cmdline-tools /q/s 2>nul
 rmdir flutter /q/s 2>nul
 rmdir vscode /q/s 2>nul
 rmdir git /q/s 2>nul
+rmdir mingw /q/s 2>nul
 rmdir go /q/s 2>nul
 rmdir nodejs /q/s 2>nul
 
@@ -19,6 +20,7 @@ del vscode.zip /q/s 2>nul
 del git.zip /q/s 2>nul
 del flutter.zip /q/s 2>nul
 del openjdk.zip /q/s 2>nul
+del mingw.zip /q/s 2>nul
 del go.zip /q/s 2>nul
 del nodejs.zip /q/s 2>nul
 
