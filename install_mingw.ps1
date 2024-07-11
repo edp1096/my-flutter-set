@@ -8,8 +8,8 @@ $asset = $json.assets | Where-Object {
 
 $mingwDownloadURL = $asset.browser_download_url
 
-write-output $json.name
-write-output $mingwDownloadURL
+# write-output $json.name
+# write-output $mingwDownloadURL
 
 import-module bitstransfer
 

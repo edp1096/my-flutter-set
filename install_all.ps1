@@ -6,3 +6,5 @@ write-output "* sdkmanager" ; .\install_sdkmanager.ps1
 write-output "* mingw"      ; .\install_mingw.ps1
 write-output "* golang"     ; .\install_go.ps1
 write-output "* nodejs"     ; .\install_nodejs.ps1
+
+write-output "* sdk tools"     ; .\install_android_sdk_tools.cmd
