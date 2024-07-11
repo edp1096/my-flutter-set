@@ -18,7 +18,7 @@ Unblock-File *.ps1                                  # Unblock ps1 files
 ```
 
 <details>
-<summary>`install_all.ps1` spawn below `ps1`/`cmd` files and create shortcut to Desktop</summary>
+<summary>install_all.ps1 spawn below ps1/cmd files and create shortcut to Desktop</summary>
 
 <pre>
     * install_update_vscode.ps1 - Install or update vscode
