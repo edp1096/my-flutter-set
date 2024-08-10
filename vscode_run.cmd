@@ -9,6 +9,7 @@ set VSCODE_RUN_COMMAND=vscode\bin\code.cmd --reuse-window --extensions-dir vscod
 set HOME=%cd%\home
 set USERPROFILE=%cd%\home\user-profile
 set APPDATA=%cd%\home\app-data
+set LOCALAPPDATA=%cd%\home\local-app-data
 
 set GIT_CEILING_DIRECTORIES=%cd%\playground
 
@@ -17,6 +18,9 @@ set PIP_NO_CACHE_DIR=off
 set PATH=C:\Windows;C:\Windows\System;C:\Windows\System32
 set PATH=%PATH%;%SystemRoot%\SysWOW64\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH\;C:\Windows\System32\wbem
 set PATH=%cd%\my_cmds;%cd%\bin;%PATH%
+set PATH=%cd%\home\local-app-data\Pub\Cache\bin;%cd%\bin;%PATH%
+set PATH=%USERPROFILE%\go\bin;%PATH%
+
 
 if exist git (
     set PATH=%cd%\git;%cd%\git\cmd;%cd%\git\mingw64\bin;%cd%\git\usr\bin;%PATH%
